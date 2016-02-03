@@ -1,6 +1,6 @@
 ﻿
 # include <Siv3D.hpp>
-# include "Asc/AscInput.hpp"
+# include "asc/AscInput.hpp"
 
 using namespace asc;
 

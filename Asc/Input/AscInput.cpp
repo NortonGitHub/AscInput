@@ -1,7 +1,7 @@
-# include <Siv3D.hpp>
 # include <unordered_map>
-# include "AscAxis.hpp"
-# include "AscInput.hpp"
+# include <Siv3D.hpp>
+# include "Axis.hpp"
+# include "../Input.hpp"
 
 namespace asc
 {
@@ -25,7 +25,7 @@ asc::Input::Input() : pInput(std::make_shared<CInput>()) {};
 KeyCombination asc::Input::button(const String& name) const
 {
 	if (!pInput->m_enabled)
-		return Key();
+		return KeyCombination();
 
 	return pInput->m_buttons.at(name);
 }

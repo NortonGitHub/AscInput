@@ -1,7 +1,6 @@
 # pragma once
-
 # include <Siv3D.hpp>
-# include "AscAxis.hpp"
+# include "./Input/Axis.hpp"
 
 namespace asc
 {
